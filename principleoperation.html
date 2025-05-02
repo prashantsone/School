@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <Style>
+           
+       
+       .dropbtn {
+  background-color: #50f5f5;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width:500px;
+  margin-left:550px;
+  margin-top:130px;
+  box-shadow: 10px 10px 5px black;
+  border-radius: 50px 20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #50f5f5;
+  min-width: 160px;
+  box-shadow: 10px 10px 5px black;
+  z-index: 1;
+  border-radius:25px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  
+}
+
+.dropdown-content a:hover {background-color: #5675f5    }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  width:500px;
+  margin-left:550px;
+  
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #4749f0 ;
+}
+
+.a1{
+    height: 200px;
+  background-color: #010e0e; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #010e0e , #4bf3f3);
+}
+       </style>
+    </head>
+    <body>
+          <body class="a1">
+          <div class="dropdown">
+  <button class="dropbtn">PRINCIPLE_INFO</button>
+  <div class="dropdown-content">
+  <a href="addprin.html"target="f3">ADD_PRINCIPLE</a>
+  <a href="upprin.html"target="f3">UPDATE_PRINCIPLE</a>
+  <a href="delprin.html"target="f3">DELETE_PRINCIPLE</a>
+  <a href="viewprin.html"target="f3">VIEW_INFO</a>
+  
+ 
+</div>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <style> 
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+.form-container {
+    background-color: #dbdbdb;
+    width: 100%;
+    max-width:650px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0  4px 8px black;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input {
+    height: 30px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#gender{
+    height: 30px;
+}
+
+</style>
+    </head>
+    <body>
+         <div class="form-container">
+        <h2>Add Teaching Staff</h2>
+        <form action="addteaching.jsp" method="POST">
+            
+            <label >Full Name:</label>
+            <input type="text" name="fllnm" required>
+
+            <label >Date Of Birth</label>
+            <input type="text" name="dob" required>
+
+            <label >Gender</label>
+             <select id="gender" name="gen" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="M">M</option>
+            <option value="F">F</option>
+            </select>
+
+            <label >Phone Number:</label>
+            <input type="text"  name="phone">
+            
+            <label >Current Address:</label>
+            <input type="text"  name="cadd">
+                        
+            <label >Permanant Address:</label>
+            <input type="text"  name="padd">
+   
+            
+            <label >Staff-type</label>
+            <input type="text" name="stype">
+            
+             <label >Salary</label>
+            <input type="text" name="sal">
+            
+            <label >Joining-Date</label>
+            <input type="text" name="jdate">
+            
+            <label >Dept-no</label>
+            <input type="text" name="deptn">
+    
+            
+            <label >Username</label>
+            <input type="text" name="unm">
+            
+            <label >Password</label>
+            <input type="text" name="pass">
+            
+            
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

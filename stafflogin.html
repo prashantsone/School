@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/* Login Container */
+.login-container {
+    background-color: #bdbdbd;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #007BFF;
+}
+
+/* Submit Button */
+.submit-btn {
+    margin-top: 20px;
+}
+
+.submit-btn button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn button:hover {
+    background-color: #0056b3;
+}
+
+/* Signup Link */
+.signup-link {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.signup-link a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+} 
+body{
+     background-image: url("mmlogin.jpg");
+     background-size: cover;
+    }
+   
+
+
+        </style>
+    </head>
+    
+        <body class="a1">
+         <div class="login-container">
+        <h2>Login</h2>
+        
+        <form action="chairmanlogin.jsp" method="POST">
+            <lable>job profile</lable>
+            <select id="gender" name="job" required>
+            <option value="" disabled selected>Select your profile</option>
+            <option value="chairman">chairman</option>
+            <option value="principle">principle</option>
+             <option value="teaching">teaching</option>
+              <option value="nonteach">nonteach</option>
+            </select>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="un" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="ps" required>
+            </div>
+            <div class="submit-btn">
+                <button type="submit">Login</button>
+            </div>
+            <p class="signup-link">Don't have an account? <a href="create.html">Sign up</a></p>
+        </form>
+    </div>
+    </body>
+</html>
